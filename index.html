@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: popins,sans-serif;
+}
+body{
+    width: 100wv;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80);
+    /* background-color:rgb(3, 241, 241); */
+    background-size: cover;
+    background-position:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(20px);
+   border: 2px solid rgb(173, 169, 148);
+   border-radius: 20px;
+
+}
+.login h1 {
+    text-align: center;
+    
+}
+.login p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+    
+}
+.input{
+    background-color:transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:4px;
+}
+input.input {
+    padding: 20px ;
+
+}
+.login .remember {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.login .check {
+    padding: 10px;
+ font-size: 14px;   
+
+}
+.login .abc .for {
+    float:inline-end;
+    text-decoration:"none";
+    color:rgb(19, 8, 8);
+}
+.login .abc {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.login button {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+position: relative;
+left: 25%; 
+border-radius:10px ;
+padding:10px ;
+width: 80px;
+margin: 15px ;
+}
+.login button:hover {
+    cursor: pointer;
+    color:white ;
+    background-color:rgb(17, 17, 2);
+}
+.login label .off{
+    text-decoration: none;
+    color: black;
+}
+
+.login label .off:hover{
+    box-shadow: inset 100px 0 0 0 #2fa1c1b0;
+    
+  color:white;
+  animation: ;
+}
+
+</style>
+
+<body>
+    <div class="login">
+        <form action="">
+          
+                <h1>Login</h1>
+                <p>This will take only 20 seconds</p>
+                <!-- <label > -->
+                    <div class="input-box">
+                <input type="email" placeholder="Username"  class="input" >
+                <!-- </label> --> <br>
+                <input type="password" placeholder="Enter password"  class="input">
+                </div>
+                <button type="button">Login</button>
+       <div class="abc">
+            <label class="check"><input type="checkbox">Remember Me </label>
+            <a href="#" class="for">Forgot password</a>
+        </div>
+
+
+
+            <div class="register">
+                <label> Don't have an account ?
+                    <a href="#" class="off" >Register</a>
+                </label>
+            </div>
+        </form>
+       
+    </div>
+</body>
+
+</html>
